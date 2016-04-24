@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.alexilyin.android.yandexmobilization2016.view.DetailActivity"
+    tools:showIn="@layout/detail_activity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/detail_albums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/ic_album_black_18dp"
+                android:drawablePadding="@dimen/ic_padding" />
+
+            <TextView
+                android:id="@+id/detail_tracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_toRightOf="@id/detail_albums"
+                android:drawableLeft="@drawable/ic_audiotrack_black_18dp"
+                android:drawablePadding="@dimen/ic_padding" />
+
+            <TextView
+                android:id="@+id/detail_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/detail_albums"
+                android:drawableLeft="@drawable/ic_local_offer_black_18dp"
+                android:drawablePadding="@dimen/ic_padding" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Биография"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <!--
+                <WebView
+                    android:id="@+id/detail_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:elevation="4dp" />
+        -->
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

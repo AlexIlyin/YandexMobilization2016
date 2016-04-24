@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">YandexMobilization2016</string>
+
+    <string name="artist_recyclerview_cover_description">Cover image</string>
+
+    <string name="splash_step_start">Init loading…</string>
+    <string name="splash_step_download">Downloading data…</string>
+    <string name="splash_step_insert_1">Insert Genre data…</string>
+    <string name="splash_step_insert_2">Insert Artist data…</string>
+    <string name="splash_step_insert_3">Insert ArtistGenre data…</string>
+    <string name="splash_step_finish">Done!</string>
+</resources>
